@@ -1,3 +1,70 @@
+# 个人博客
+
+一个基于Hexo的个人博客，使用GitHub Actions自动部署到GitHub Pages。
+
+## 部署状态
+
+[![Deploy Hexo site to GitHub Pages](https://github.com/phantex94/blogging/actions/workflows/deploy.yml/badge.svg)](https://github.com/phantex94/blogging/actions/workflows/deploy.yml)
+
+## 博客地址
+
+[https://phantex94.github.io/blogging](https://phantex94.github.io/blogging)
+
+## 本地开发
+
+### 安装依赖
+
+```bash
+cd hexo-blog
+npm install
+```
+
+### 本地预览
+
+```bash
+cd hexo-blog
+npm run server
+```
+
+访问 [http://localhost:4000](http://localhost:4000) 预览博客。
+
+### 创建新文章
+
+```bash
+cd hexo-blog
+npx hexo new "文章标题"
+```
+
+## 自动部署
+
+本项目使用GitHub Actions自动部署到GitHub Pages。每当推送到main分支时，GitHub Actions会自动构建并部署博客。
+
+### 部署流程
+
+1. 推送更改到main分支
+2. GitHub Actions自动运行部署工作流
+3. 构建Hexo静态文件
+4. 部署到GitHub Pages
+
+### GitHub Pages设置
+
+为了使GitHub Actions能够正确部署，请确保在GitHub仓库设置中：
+
+1. 导航到仓库的Settings > Pages
+2. 在Source部分，选择"GitHub Actions"作为发布源
+
+## 文件结构
+
+- `hexo-blog/`: Hexo博客源文件
+  - `source/_posts/`: 博客文章
+  - `source/about/`: 关于页面
+  - `themes/`: 博客主题
+- `.github/workflows/`: GitHub Actions工作流配置
+
+## 许可证
+
+MIT
+
 1. 项目概述
 本项目基于 Hexo 静态博客框架，采用 Vivia 主题，托管在 GitHub Pages 上，旨在构建一个美观、简洁且适用于 桌面端和移动端 的个人博客。
 
