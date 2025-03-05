@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://phantex94.github.io/blogging
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -106,6 +106,6 @@ theme: vivia
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/yourusername/yourusername.github.io.git
+  repo: https://github.com/phantex94/blogging.git
   branch: main
   message: "网站更新: {{now('YYYY-MM-DD HH:mm:ss')}}"
