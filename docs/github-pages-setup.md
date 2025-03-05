@@ -11,9 +11,15 @@
    ![GitHub Pages Source Setting](https://docs.github.com/assets/cb-32892/mw-1440/images/help/pages/publishing-source-actions.webp)
 5. 点击 **Save** 保存设置
 
+## 防止Jekyll处理
+
+GitHub Pages默认会使用Jekyll处理仓库中的内容。由于我们使用Hexo生成静态文件，不需要Jekyll的处理，因此我们在工作流中添加了一个`.nojekyll`文件，告诉GitHub Pages不要使用Jekyll处理我们的网站。
+
+这个文件是在GitHub Actions工作流的构建步骤中自动创建的，您不需要手动添加。
+
 ## GitHub Actions工作流
 
-本仓库已配置了GitHub Actions工作流，位于 `.github/workflows/deploy.yml`。该工作流会在每次推送到main分支时自动构建并部署Hexo博客。
+本仓库已配置了GitHub Actions工作流，位于 `.github/workflows/deploy.yml`。该工作流会在每次推送到master分支时自动构建并部署Hexo博客。
 
 工作流的主要步骤包括：
 
@@ -22,8 +28,9 @@
 3. 缓存NPM依赖
 4. 安装依赖
 5. 构建Hexo静态文件
-6. 上传构建产物
-7. 部署到GitHub Pages
+6. 创建`.nojekyll`文件
+7. 上传构建产物
+8. 部署到GitHub Pages
 
 ## 自定义域名（可选）
 
@@ -42,6 +49,7 @@
 2. 检查GitHub Actions工作流的日志，查看是否有构建或部署错误
 3. 确保Hexo配置文件 `_config.yml` 中的URL设置正确
 4. 确保仓库的权限设置允许GitHub Actions写入Pages
+5. 确保`.nojekyll`文件存在于生成的静态文件中，防止Jekyll处理
 
 ## 参考链接
 
