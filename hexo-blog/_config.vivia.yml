@@ -13,7 +13,7 @@ favicon: /favicon.png                  # Favicon 文件路径，相对于 /sourc
 # 横幅图片
 banner:
   enable: true                  # 是否显示横幅图片
-  url: https://unsplash.com/photos/person-sitting-on-rock-near-sea-during-daytime-qs7z-_c3s-Y       # 横幅图片文件路径，相对于 /source 目录，也可填写网络图片 URL
+  url: /europeana-qs7z-_c3s-Y-unsplash.jpg      # 横幅图片文件路径，相对于 /source 目录，也可填写网络图片 URL
   position: center               # 决定图片将如何被裁剪，对应 CSS 中的 "object-position" 属性
   onAllPages: true               # 在所有页面上显示横幅，而不是只在首页显示
 
@@ -22,7 +22,7 @@ hue: 250                         # 主题色调 (例如：红: 0，橙: 60，蓝
                                  # 可访问 `saicaca.github.io/vivia-preview` 预览颜色设置
 
 # 个人信息
-avatar:                          # 头像图片文件路径，相对于 /source 目录
+avatar: /favicon.png                 # 头像图片文件路径，相对于 /source 目录
 author: FrankFang
 subtitle: 分享技术与生活
 links:
