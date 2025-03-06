@@ -1,3 +1,13 @@
+---
+title: Qlib 收益归因分析
+date: 2025-03-06 17:07:00
+tags:
+  - Qlib
+  - 量化投资
+  - 绩效分析
+categories:
+  - 技术分享
+---
 # Qlib PNL归因分析
 
 ## 1. PNL归因分析概述

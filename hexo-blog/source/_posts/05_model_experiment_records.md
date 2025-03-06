@@ -1,3 +1,13 @@
+---
+title: Qlib 模型实验记录
+date: 2025-03-06 17:07:00
+tags:
+  - Qlib
+  - 量化投资
+  - 实验管理
+categories:
+  - 技术分享
+---
 # Qlib 模型实验记录 (MLRUNS)
 
 ## 1. 实验记录概述

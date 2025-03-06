@@ -1,3 +1,13 @@
+---
+title: Qlib 模型滚动训练
+date: 2025-03-06 17:07:00
+tags:
+  - Qlib
+  - 量化投资
+  - 模型训练
+categories:
+  - 技术分享
+---
 # Qlib 模型滚动（Rolling）机制
 
 ## 1. 滚动训练和预测概述
